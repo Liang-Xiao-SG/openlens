@@ -1,6 +1,5 @@
 <?php
 // index.php - TrustLoop Home Page
-require_once 'config/config.php'; // Ensure this is at the top
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -61,10 +60,9 @@ require_once 'config/config.php'; // Ensure this is at the top
     <h1>Welcome to TrustLoop</h1>
     <p>Where trust, proximity, and human potential form the future of service exchange.</p>
   </header>
-  <a href="#calendarInput" class="btn btn-primary" onclick="focusCalendar()">Pick TOTO number</a>
+
   <section>
     <h2>🌱 Vision</h2>
-
     <p>TrustLoop empowers people to openly offer and request services within trusted social bubbles. It's a human-first platform that values reciprocity, trust, and life experience as core currency in a post-AI world.</p>
 
     <h2>🫧 Social Bubbling</h2>
@@ -86,22 +84,12 @@ require_once 'config/config.php'; // Ensure this is at the top
       <li>Creative freelancers or task helpers</li>
       <li>Anyone with time, care, or knowledge to give</li>
     </ul>
-    <?php include 'views/home/index_fortune.php'; ?>
 
-    <!-- <div class="cta">
+    <div class="cta">
       <a href="#">Start Your Journey →</a>
-    </div> -->
+    </div>
   </section>
 
   
 </body>
-<script>
-function focusCalendar() {
-    const calendar = document.getElementById('fortuneForm');
-    if (calendar) {
-        calendar.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        calendar.focus();
-    }
-}
-</script>
 </html>
